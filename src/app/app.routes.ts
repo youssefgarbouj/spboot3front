@@ -16,7 +16,7 @@ export const routes: Routes = [
   { path: 'update-moto/:id', component: UpdateMoto, canActivate: [motoGuard] },
   { path: 'rechercheParCategorie', component: RechercheParCategorie },
   { path: 'rechercheParNom', component: RechercheParNom },
-  { path: 'listeCategories', component: ListeCategories },
+ { path: 'listeCategories', component: ListeCategories, canActivate: [motoGuard] },
   { path: 'login', component: Login },
   { path: 'app-forbidden', component: Forbidden },
 ];
